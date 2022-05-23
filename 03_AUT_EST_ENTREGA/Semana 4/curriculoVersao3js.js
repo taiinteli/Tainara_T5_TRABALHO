@@ -1,6 +1,6 @@
 function adicionarInformacoes() {
-    let box = document.getElementById('box')
-    let inputText = document.getElementById('conquistas')
-
+    var inputText = document.getElementById('conquistas').value
+    var box = document.getElementById('box')
+    
     box.innerHTML += inputText
 }
