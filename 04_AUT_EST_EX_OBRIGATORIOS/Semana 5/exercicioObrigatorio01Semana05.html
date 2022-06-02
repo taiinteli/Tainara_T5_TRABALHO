@@ -11,47 +11,47 @@
     <div class="main">
             
         <form action="" name="Calculator">
-            <input type ="text" class="text maincolor" name="text1" disabled >
+            <input type ="text" class="text maincolor" name="text1" disabled >    <!-- visor que aparece o número + resultado das operações -->  
             <input type ="text" class="text maincolor" name="text12" value="C" 
                       onclick="location.reload()"><br>
-           
+                      
+                    <!-- todos os botões (sejam com valor numerico os de operações) aparecem no visor, exeto o de igualdade (=) --> 
 
-            <input type = "button" class="num maincolor" name="btn9" value="9" 
-                     onclick="displaynum(btn9.value)">
+            <input type = "button" class="num maincolor" name="btn9" value="9"   
+                     onclick="displaynum(btn9.value)">                            <!-- botão número 9 -->
             <input type = "button" class="num maincolor" name="btn8" value="8"
-                      onclick="displaynum(btn8.value)">
+                      onclick="displaynum(btn8.value)">                           <!-- botão número 8 -->
             <input type = "button" class="num maincolor" name="btn7" value="7" 
-                      onclick="displaynum(btn7.value)">
+                      onclick="displaynum(btn7.value)">                           <!-- botão número 7 -->
             <input type = "button" class="num blue" name="addbtn" value="+"
-                       onclick="displaynum(addbtn.value)"><br> 
+                       onclick="displaynum(addbtn.value)"><br>                    <!-- botão adição --> 
 
             <input type = "button" class="num maincolor" name="btn6" value="6" 
-                     onclick="displaynum(btn6.value)">
+                     onclick="displaynum(btn6.value)">                            <!-- botão número 6 --> 
             <input type = "button" class="num maincolor" name="btn5" value="5" 
-                      onclick="displaynum(btn5.value)">
+                      onclick="displaynum(btn5.value)">                            <!--botão número 5 --> 
             <input type = "button" class="num maincolor" name="btn4" value="4" 
-                     onclick="displaynum(btn4.value)">
+                     onclick="displaynum(btn4.value)">                             <!-- botão número 4 -->
             <input type = "button" class="num pin" name="subbtn" value="-" 
-                     onclick="displaynum(subbtn.value)"><br>  
+                     onclick="displaynum(subbtn.value)"><br>                       <!-- botão subtração --> 
           
-            <input type = "button" class="num maincolor" name="btn3" value="3" 
-                      onclick="displaynum(btn3.value)"
-                      id="3">
+            <input type = "button" class="num maincolor" name="btn3" value="3"    
+                      onclick="displaynum(btn3.value)">                            <!--botão número 3 -->                                                 
             <input type = "button" class="num maincolor" name="btn2" value="2" 
-                     onclick="displaynum(btn3.value)">
+                     onclick="displaynum(btn3.value)">                             <!--botão número 2 --> 
             <input type = "button" class="num maincolor" name="btn1" value="1"
-                     onclick="displaynum(btn1.value)">
-            <input type = "button" class="num gre" name="mulbtn" value="*" 
-                     onclick="displaynum(mulbtn.value)"><br> 
+                     onclick="displaynum(btn1.value)">                             <!--botão número 1 --> 
+            <input type = "button" class="num gre" name="mulbtn" value="*"          
+                     onclick="displaynum(mulbtn.value)"><br>                       <!--botão multiplicação --> 
 
-            <input type = "button" class="num maincolor" name="dot" value="." 
-                     onclick="displaynum(btndot.value)">
+            <input type = "button" class="num maincolor" name="dot" value="."  
+                     onclick="displaynum(btndot.value)">                            <!--botão . --> 
             <input type = "button" class="num maincolor" name="btn0" value="0" 
-                     onclick="displaynum(btn0.value)">
+                     onclick="displaynum(btn0.value)">                              <!--botão número 0 --> 
             <input type = "button" class="num pur" name="eqlbtn" value="=" 
-                     onclick="text1.value=eval(text1.value)">
+                     onclick="text1.value=eval(text1.value)">                       <!--botão número igualdade --> 
             <input type = "button" class="num ora" name="divbtn" value="/" 
-                     onclick="displaynum(divbtn.value)"><br> 
+                     onclick="displaynum(divbtn.value)"><br>                          <!--botão divisão --> 
 
         </form>
 
