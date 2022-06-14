@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"hrel="style.css" />
+    <title>Exercicio01da07</title>
+</head>
+<body>
+    <div class="main">
+            
+     <form action="" name="Exercicio01da07">
+     <h1> Exercício 01 da Semana 07 </h1>
+     <h4> Enunciado: Crie uma página web na qual o usuário possa informar a quantidade de um produto em um valor inteiro e, por meio de dois botões, um que adiciona uma unidade e um que subtraia uma unidade, o valor do campo da quantidade possa ser manipulado </h4>
+          
+    <div class="main">
+            
+             <form action="" name="Exercicio01da07">
+                 <input type ="text" class="text maincolor" name="text1" disabled >    <!-- visor que aparece a quantidade de um produto + resultado das operações de soma ou subtração da quantidade -->  
+                 <input type ="text" class="text maincolor" name="text12" value="C" 
+                      onclick="location.reload()"><br>
+        
+                 <input type = "button" class="num maincolor" name="btn9" value="9"   
+                      onclick="displaynum(btn9.value)">                            <!-- botão número 9 -->
+                 <input type = "button" class="num maincolor" name="btn8" value="8"
+                       onclick="displaynum(btn8.value)">                           <!-- botão número 8 -->
+                 <input type = "button" class="num maincolor" name="btn7" value="7" 
+                       onclick="displaynum(btn7.value)">                           <!-- botão número 7 -->
+                 <input type = "button" class="num maincolor" name="btn6" value="6" 
+                      onclick="displaynum(btn6.value)">                            <!-- botão número 6 --> 
+                 <input type = "button" class="num maincolor" name="btn5" value="5" 
+                      onclick="displaynum(btn5.value)">                            <!--botão número 5 --> 
+                 <input type = "button" class="num maincolor" name="btn4" value="4" 
+                      onclick="displaynum(btn4.value)">                             <!-- botão número 4 -->
+                 <input type = "button" class="num maincolor" name="btn3" value="3"    
+                      onclick="displaynum(btn3.value)">                            <!--botão número 3 -->                                                 
+                 <input type = "button" class="num maincolor" name="btn2" value="2" 
+                      onclick="displaynum(btn3.value)">                             <!--botão número 2 --> 
+                 <input type = "button" class="num maincolor" name="btn1" value="1"
+                      onclick="displaynum(btn1.value)">                             <!--botão número 1 --> 
+                 <input type = "button" class="num maincolor" name="btn0" value="0" 
+                      onclick="displaynum(btn0.value)">                              <!--botão número 0 --> 
+
+                 <input type = "button" class="num pin" name="subbtn" value="-" 
+                      onclick="displaynum(subbtn.value)"><br>                       <!-- botão de subtrair uma unidade -->        
+                 <input type = "button" class="num blue" name="addbtn" value="+"
+                      onclick="displaynum(addbtn.value)"><br>                    <!-- botão de adicionar uma unidade --> 
+                 <input type = "button" class="num pur" name="eqlbtn" value="=" 
+                      onclick="text1.value=eval(text1.value)">                       <!-- botão de obter o resultado da soma igualdade --> 
+                
+
+             </form>
+
+        
+    </div> 
+          
+</body>
+ <script src="script.js"></script>
+      </html>
