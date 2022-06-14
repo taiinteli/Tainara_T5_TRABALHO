@@ -21,7 +21,7 @@ const DBPATH = 'db.db'
 
 /* DEFINIÇÃO DOS ENDPOINTS */
 
-// Experiencias - checar registros cadastros na tabela NETWORK
+// Experiencias - checar registros cadastros na tabela experiencias
 app.get('/networks', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
@@ -37,7 +37,7 @@ app.get('/networks', (req, res) => {
 	db.close(); 
 });
 
-// ExperienciasINSERT - inserir novos registros na tabela NETWORK
+// ExperienciasINSERT - inserir novos registros na tabela experiencias
 app.post('/networkinsert', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
