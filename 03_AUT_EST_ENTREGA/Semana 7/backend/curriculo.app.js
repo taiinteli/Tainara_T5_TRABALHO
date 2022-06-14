@@ -42,7 +42,7 @@ app.post('/networkinsert', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	// insere valores de nome e tipo segundo a request enviada pelo cliente
-	sql = "INSERT INTO network (name, type) VALUES ('" + req.body.name + "', '" + req.body.type + "')";
+	sql = "INSERT INTO experiencias (titulo, instituicao, termino) VALUES ('" + req.body.titulo + "', '" + req.body.instituicao + "', '" + req.body.termino + "' )";
 	var db = new sqlite3.Database(DBPATH);
 	db.run(sql, [],  err => {
 		if (err) {
@@ -53,8 +53,8 @@ app.post('/networkinsert', urlencodedParser, (req, res) => {
 	res.end();
 });
 
-// ExperienciasDELETE - deletar registros cadastrados na tabela NETWORK
-app.post('/networkdelete', urlencodedParser, (req, res) => {
+// ExperienciasDELETE - deletar registros cadastrados na tabela experiencias
+app.post('/exeperienciasdelete', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	// deleta segundo o id
@@ -69,12 +69,12 @@ app.post('/networkdelete', urlencodedParser, (req, res) => {
 	db.close(); 
 });
 
-// ExperienciasUPDATE - atualizar registros cadastrados na tabela NETWORK 
-app.post('/networkupdate', urlencodedParser, (req, res) => {
+// ExperienciasUPDATE - atualizar registros cadastrados na tabela experiencias
+app.post('/experienciasupdate', urlencodedParser, (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	// permite alterar o nome e o tipo dado certo id (chave primária)
-	sql = "UPDATE network SET name = '" + req.body.name + "', type = '" + req.body.type + "' WHERE id = " + req.body.id;
+	sql = "UPDATE network SET titulo = '" + req.body.titulo + "', instituicao = '" + req.body.instituicao + "' WHERE id = " + req.body.id;
 	var db = new sqlite3.Database(DBPATH);
 	db.run(sql, [],  err => {
 		if (err) {
@@ -85,7 +85,7 @@ app.post('/networkupdate', urlencodedParser, (req, res) => {
 	db.close();
 });
 
-// ExperienciasMANAGERS - checar registros cadastrados na tabela NETWORK MANAGER
+// Experiencias - checar registros cadastrados na tabela experiencias
 app.get('/networkmanagers', (req, res) => {
 	res.statusCode = 200;
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
