@@ -9,5 +9,8 @@
     <h4> Enunciado: Crie uma página web na qual o usuário deva escrever em um campo de texto o número de seu celular no formato "(XX)XXXXX-XXXX" e, caso o formato não seja respeitado, o usuário seja notificado. </h4>
 </head>
 <body>
+  <form action="" method="get">
+    <input type="text" id="telefone" name="telefone" pattern="\(\d{2}\)\d{5}-\d{4}">
+    <button type="submit">Validar o formato solicitado</button>
 </body>
 </html>
